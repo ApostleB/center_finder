@@ -2,4 +2,5 @@
 package-lock.json
 /config
 *.env
+.env
 *config*.js

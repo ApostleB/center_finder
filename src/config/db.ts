@@ -1,11 +1,11 @@
+import dotenv from "dotenv";
 import mysql from "mysql";
 
 const dbConfig = {
-    host: "localhost",
-    user: "root",
-    password: "1234",
-    database: "center_finder",
-    port : 3306
+    database: process.env.DB_DATABASE,
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
 }
 
 const db = mysql.createConnection(dbConfig);
